@@ -1,0 +1,132 @@
+body{
+    background-color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    background-image: url("fondo.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+}
+*{
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 90%;
+    padding: 3px;
+}
+
+.formulario{
+    flex-direction: column;
+    background: #fff;
+    margin-top: 2500px;
+    padding: 1px;
+    width: 500%;
+    border: 2.5px solid black;
+}
+
+h1{
+    text-align:center;
+    font-size: 30px;
+    padding: -0.5px 5px;
+    width: 100%;
+}
+
+select{
+    justify-content:left;
+    font-size: 15px;
+    width: 70%;
+    padding: 3px;
+    border:2px solid #aaa;
+}
+
+
+input[type="password"]{
+    justify-content:left;
+    font-size: 15px;
+    width: 70%;
+    padding: 5px;
+    border:2px solid #aaa;
+    text-decoration:black;
+}
+
+.icon{
+    min-width: 50px;
+    text-align: right;
+}
+
+.input-contenedor{
+    margin-bottom: 3px;
+    text-align:center;
+}
+
+.button{
+    justify-content:center;
+    border: none;
+    width:30%;
+    color:#fff;
+    font-size: 20px;
+    background: #1a2537;
+    padding:15px 20px;
+    border-radius:400px;
+    cursor:pointer;
+}
+
+.button:hover{
+    background: cadetblue;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a{
+    text-decoration:underline;
+    font-weight: 700;
+    padding-left: 40px;
+    color: rgb(2, 5, 2);
+}
+
+a:hover{
+    color:cadetblue;
+}
+
+nav a:hover{
+    color:cadetblue;
+}
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    min-height: 70px;
+    justify-content:center;
+    align-items:center;
+    padding: 10px;
+    border-radius: 30px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+@media(min-width:700px){
+    .formulario{
+        margin: auto;
+        width:600px
+    }
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}

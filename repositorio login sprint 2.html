@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5fbc4f1063.js" crossorigin="anonymous"></script>
+    <title>Registro Medico</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="logo.jpg" alt="logo hospital">
+            <h2 class="nombre-hospital">
+                Hospital Universitario
+                <br>Metropolitano
+            </h2>
+        </a>
+        <nav>
+            <a href="" class="nav-link">Login</a><a href="" class="nav-link">Solicitar citas</a>
+        </nav>
+    </header>
+
+    <div id="formulario">
+        <form class="formulario" action=""
+         method="put" 
+         name="formRegistro"
+         onreset="mostrarElementoReset()">
+
+         <h1>login</h1>
+
+         <div class="contenedor">
+            <div class="input-contenedor">
+                <i class="fa-regular fa-id-badge icon"></i>
+                <select> 
+                    <option>Tipo de documento</option>
+                    <option>CC-Cédula de Ciudadanía</option>
+                    <option>CE-Cédula de Extranjería</option>
+                    
+                    <option>TI-Tarjeta de Identidad</option>
+                </select>
+            </div>
+
+            <div class="input-contenedor">
+                <i class="fa-solid fa-address-card icon"></i>
+                <input
+                type="number" 
+                placeholder="Número de identificación"
+                id="identificacion" 
+                name="identificacion" 
+                required>
+            </div>  
+                 
+          
+            <div class="input-contenedor">
+                <i class="fa-sharp fa-solid fa-key icon"></i>
+                <input type="password"
+                name="password" 
+                placeholder="Contraseña para ingreso"
+                id="password">
+            </div>
+
+            <input type="submit" value="Registrar" class="button">
+           
+        </div>
+    </form>
+    </div>
+
+</body>
+</html>
