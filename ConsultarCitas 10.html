@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5fbc4f1063.js" crossorigin="anonymous"></script>
+    <title>Consultar Citas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="logo.jpg" alt="logo hospital">
+            <h2 class="nombre-hospital">
+                Hospital Universitario
+                <br>Metropolitano
+            </h2>
+        </a>
+        <nav>
+            <a href="" class="nav-link">Login</a><a href="" class="nav-link">Solicitar citas</a>
+        </nav>
+    </header>
+
+
+    <div id="formulario">
+        <form class="formulario" action=""
+         method="POST" 
+         name="formRegistro"
+         onreset="mostrarElementoReset()">
+         
+         <h1>Consultar Citas</h1>
+
+         <br>
+         <center>
+         <h4>Fecha:  
+         <input type="date" name="fecha" style="width:50%" class="fecha"></h4>
+        </center>
+
+         <br>
+         <br>
+         <style type="text/css">
+            h4{
+                font-size: 17px;
+            }
+            .fecha{
+                border:2px solid rgb(15, 13, 13);
+                font-size: 20px;
+                border-radius:400px;
+                padding: 8px;
+                text-align:center;
+            }
+
+            table,th, td{
+                border: 3px solid rgb(110, 211, 28);
+                border-collapse: collapse;
+            }
+            td{
+                padding: 15px;
+            }
+            th{
+                background-color:rgba(80, 195, 130, 0.782);
+            }
+            td{
+                background-color:#fff;
+            }
+
+         </style>
+
+         <center>
+         <table style="width:80%">
+            <tr>
+                <th>Id <br> (Número de identificación) </th>
+                <th>Paciente <br> (Nombres y Apellidos)</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+         </table>
+        </center>
+        <br>
+        <br>
+
+         
+    </form>
+    </div>
+
+</body>
+</html>
