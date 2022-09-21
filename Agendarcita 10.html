@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5fbc4f1063.js" crossorigin="anonymous"></script>
+    <title>Agendar Cita</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="logo.jpg" alt="logo hospital">
+            <h2 class="nombre-hospital">
+                Hospital Universitario
+                <br>Metropolitano
+            </h2>
+        </a>
+        <nav>
+            <a href="" class="nav-link">Login</a><a href="" class="nav-link">Solicitar citas</a>
+        </nav>
+    </header>
+
+    <div id="formulario">
+        <form class="formulario" action=""
+         method="put" 
+         name="formRegistro"
+         onreset="mostrarElementoReset()">
+
+         <h1>Asignar Cita</h1>
+
+         <div class="contenedor">
+            <div class="input-contenedor">
+                <i class="fa-regular fa-id-badge icon"></i>
+                <select> 
+                    <option>Tipo de documento</option>
+                    <option>CC-Cédula de Ciudadanía</option>
+                    <option>CE-Cédula de Extranjería</option>
+                    <option>IE-ID Extranjero</option>
+                    <option>NIT</option>
+                    <option>RC-Registro Civil</option>
+                    <option>TI-Tarjeta de Identidad</option>
+                </select>
+            </div>
+
+            <div class="input-contenedor">
+                <i class="fa-solid fa-address-card icon"></i>
+                <input
+                type="number" 
+                placeholder="Número de identificación"
+                id="identificacion" 
+                name="identificacion" 
+                required>
+            </div>
+
+            <div class="input-contenedor">
+                <i class="fa-solid fa-user icon"></i>
+                <input
+                type="text" 
+                placeholder="Nombres y Apellidos"
+                id="nombres" 
+                name="nombres" 
+                required>
+            </div>
+
+            <div class="input-contenedor">
+                <i class="fa-sharp fa-solid fa-phone icon"></i>
+                <input 
+                type="number" 
+                placeholder="Número de contacto"
+                id="numero" 
+                name="numero" 
+                required>
+            </div>
+
+            <div class="input-contenedor">
+                <i class="fa-solid fa-house icon"></i>
+                <input 
+                type="email"
+                placeholder="Dirección de residencia"
+                id="direccion" 
+                name="direccion" 
+                required>
+            </div>
+
+            <div class="input-contenedor">
+                <i class="fa-solid fa-earth-americas icon"></i>
+                <input 
+                type="text" 
+                placeholder="Ciudad de residencia"
+                id="ciudad" 
+                name="ciudad" 
+                required>
+            </div>
+
+            <div class="input-contenedor">
+                <i class="fa-solid fa-at icon"></i>
+                <input 
+                type="email"
+                placeholder="Correo electrónico" 
+                id="correo" 
+                name="correo" 
+                required>
+            </div>
+
+            <div class="input-contenedor">
+                <i class="fa-regular fa-hospital icon"></i>
+                <input 
+                type="text" 
+                placeholder="EPS de afiliación"
+                id="eps" 
+                name="eps" 
+                required>
+            </div>
+
+            <div class="input-contenedor">
+                <i class="fa-solid fa-user-doctor icon"></i>
+                <select> 
+                    <option>Seleccione la Especialidad</option>
+                    <option>Medicina General</option>
+                    <option>Cardiología</option>
+                    <option>Cirugía General</option>
+                    <option>Dermatología</option>
+                    <option>Oncología</option>
+                    <option>Hematología</option>
+                </select>
+            </div>
+
+            <div class="input-contenedor">
+                <i class="fa-solid fa-user-doctor icon"></i>
+                <select> 
+                    <option>Seleccione el médico</option>
+                </select>
+            </div>
+
+            
+            <center>
+            <div class="input-contenedor"></div>
+            <input type="datetime-local" name="fecha" style="width:50%" class="fecha">
+            <i class="fa-regular fa-calendar-days"></i>
+            </div>
+            </center>
+
+
+            <center>
+            <p>
+                <input 
+                type="checkbox" 
+                name="condiciones">
+                Acepto las politicas de privacidad y 
+                proteccion de datos
+            </p>
+        </center>
+            
+            <center>
+                <i class="fa-solid fa-user-plus"></i>
+                <input type="submit" value="Agendar cita" class="button">
+                <i class="fa-solid fa-user-xmark"></i>
+                <input type="reset" value="Cancelar" class="button">
+                </center>
+                <br>
+        </div>
+    </form>
+    
+    </div>
+
+</body>
+</html>
